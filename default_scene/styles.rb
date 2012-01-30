@@ -81,16 +81,29 @@ non_traversable_square {
 }
 
 checker {
-  width 50
-  height 50
-  rounded_corner_radius 25
+  width 98
+  height 98
+  rounded_corner_radius 49
   border_color '#000'
   border_width 1
-  background_color 'F00'
   horizontal_alignment :center
   vertical_alignment :center
+}
+
+red_checker {
+  background_color '#F00'
+
   hover {
     border_color '#FFF'
     background_color '#F66'
+  }
+}
+
+black_checker {
+  background_color '#000'
+
+  hover {
+    border_color '#FFF'
+    background_color '#666'
   }
 }

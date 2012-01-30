@@ -1,0 +1,15 @@
+--- 
+cursor_positions: 
+  - :path: default_scene/props.rb
+    :cursor_offset: 408
+    :timestamp: 2012-01-25 15:31:41 -06:00
+  - :path: default_scene/styles.rb
+    :cursor_offset: 0
+    :timestamp: 2012-01-25 15:00:18 -06:00
+  - :path: production.rb
+    :cursor_offset: 1665
+    :timestamp: 2012-01-25 15:28:46 -06:00
+  - :path: stages.rb
+    :cursor_offset: 0
+    :timestamp: 2012-01-24 15:20:07 -06:00
+files_to_retain: 0

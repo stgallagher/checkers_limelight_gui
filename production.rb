@@ -1,8 +1,28 @@
 # This file (production.rb) is the first file loaded opening a production.  It must define a module named 'Production'.
 # The containing production will acquire all the behavior defined in this module.
 # You may define serveral hooks and initialization steps here.
+require 'bundler/setup'
+require 'draughts'
 
 module Production
+
+  attr_accessor :game
+
+  #def game
+  #  if @game == nil
+  #    @game = Game.new
+  #    p @game.class
+  #  end
+  #  return @game
+  #end
+
+  def start_game
+    @view = theater["default"].default_scene
+    p theater["default"].current_scene
+    p @view
+    @game = Game.new(@view)
+    @game.play_game
+  end
 
 #  # Define this method if you want the production name to be different from the default, directory name.
 #  def name
@@ -10,7 +30,7 @@ module Production
 #  end
 #
 #  # Returns the minimum version of limelight required to run this production.  Default: "0.0.0"
-#  # If the version of limelight used to open this production is less than the minimum, 
+#  # If the version of limelight used to open this production is less than the minimum,
 #  # an error will be displayed (starting with version 0.4.0).
 #  #
 #  def minimum_limelight_version
@@ -24,12 +44,11 @@ module Production
 #
 #  # Hook #2.  Called after internal gems have been loaded and stages have been instantiated, yet before
 #  # any scenes have been opened.
-#  def production_loaded
-#  end
+  def production_loaded
+    start_game
+  end
 #
 #  # Hook #3.  Called when the production, and all the scenes, have fully opened.
-#  def production_opened
-#  end
 #
 #  # The system will call this methods when it wishes to close the production, perhaps when the user quits the
 #  # application.  By default the production will always return true. You may override this behavior by re-implenting

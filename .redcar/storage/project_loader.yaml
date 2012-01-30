@@ -1,0 +1,6 @@
+--- 
+open_files: 
+  - default_scene/props.rb
+  - default_scene/styles.rb
+  - production.rb
+  - stages.rb

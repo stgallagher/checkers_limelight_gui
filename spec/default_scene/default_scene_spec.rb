@@ -9,5 +9,4 @@ describe "Default Scene" do
     root = scene.children[0]
     root.text.should == "This is the Default Scene scene."
   end
-
 end

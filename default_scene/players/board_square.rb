@@ -1,7 +1,7 @@
-module GameInfoPanel
-  puts "outside mouse clicked"
+module BoardSquare
+
   def mouse_clicked(event)
-    scene.find('game_info_panel').build do
+    scene.find('A1').build do
       checker :float => :on
     end
   end

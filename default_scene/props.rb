@@ -5,7 +5,8 @@
 
 LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 
-board_panel  do
+
+  board_panel  do
 
   upper_left_corner :styles => "corner_offset"
 
@@ -36,16 +37,15 @@ board_panel  do
     label_row :text => row, :styles => "row_label"
   end
 
-  upper_left_corner :styles => "corner_offset"
+  lower_left_corner :styles => "corner_offset"
 
   ('A'..'H').each do |text|
     label_row :text => text, :styles => "column_label"
   end
 
-  upper_right_corner :styles => "corner_offset"
-end
+  lower_right_corner :styles => "corner_offset"
+  end
 
-game_info_panel :styles => "game_info_panel", :id => 'game_info_panel'
+  game_info_panel :styles => "game_info_panel", :id => 'game_info_panel'
 
-lower_panel :text => "lower_panel" , :styles => "lower_panel"
-
+  lower_panel :text => "lower_panel" , :styles => "lower_panel"

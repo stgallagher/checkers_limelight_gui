@@ -1,0 +1,14 @@
+1327545948
+BoardSquare	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/players/board_square.rb	module BoardSquare
+Default Scene	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/spec/default_scene/default_scene_spec.rb	describe "Default Scene" do
+DefaultScene	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/players/default_scene.rb	module DefaultScene
+LETTERS	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/props.rb	LETTERS =
+Production	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/production.rb	module Production
+Refresh	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/devtool/players/refresh.rb	module Refresh
+build_board	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/props.rb	def build_board
+build_checker	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/players/board_square.rb	  def build_checker
+mouse_clicked	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/devtool/players/refresh.rb	  def mouse_clicked(e)
+mouse_clicked	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/players/board_square.rb	  def mouse_clicked(event)
+production_opened	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/production.rb	  def production_opened
+scene_opened	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/default_scene/players/default_scene.rb	  def scene_opened
+should have default text	/Users/sgallagher/Work/Ruby/GUI/checkers_limelight_gui/spec/default_scene/default_scene_spec.rb	it "should have default text" do
