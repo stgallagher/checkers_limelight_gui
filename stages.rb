@@ -10,7 +10,7 @@
 #  end
 
 stage "default" do
-  default_scene "game_setup"
+  default_scene "gamesetup"
   title "Checkers"
   location [200, 25]
   size [800, 800]
