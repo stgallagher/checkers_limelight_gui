@@ -1,7 +1,10 @@
 # This file (production.rb) is the first file loaded opening a production.  It must define a module named 'Production'.
 # The containing production will acquire all the behavior defined in this module.
 # You may define serveral hooks and initialization steps here.
-require 'bundler/setup'
+#require 'rubygems'
+#require 'gems/bundler/setup'
+require File.expand_path(File.dirname(__FILE__) + "/gems/bundler/setup")
+#$:.each { |p| puts p }
 require 'draughts'
 
 module Production
@@ -17,11 +20,9 @@ module Production
   #end
 
   def start_game
-    @view = theater["default"].default_scene
-    p theater["default"].current_scene
-    p @view
+    @view = theater["default"].current_scene
     @game = Game.new(@view)
-    @game.play_game
+    #@game.game_test
   end
 
 #  # Define this method if you want the production name to be different from the default, directory name.
@@ -44,7 +45,7 @@ module Production
 #
 #  # Hook #2.  Called after internal gems have been loaded and stages have been instantiated, yet before
 #  # any scenes have been opened.
-  def production_loaded
+  def production_opened
     start_game
   end
 #

@@ -1,0 +1,7 @@
+path = File.expand_path('..', __FILE__)
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/checkers_game_engine_sgallagher-0.0.3/lib")
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/diff-lcs-1.1.3/lib")
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/rspec-core-2.8.0/lib")
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/rspec-expectations-2.8.0/lib")
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/rspec-mocks-2.8.0/lib")
+$:.unshift File.expand_path("#{path}/../ruby/1.9.1/gems/rspec-2.8.0/lib")

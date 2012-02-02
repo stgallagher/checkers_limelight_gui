@@ -10,10 +10,10 @@
 #  end
 
 stage "default" do
-  default_scene "default_scene"
-  title "Limelight"
+  default_scene "game_setup"
+  title "Checkers"
   location [200, 25]
-  size [1200, 1000]
+  size [800, 800]
 end
 
 stage "devtool" do
