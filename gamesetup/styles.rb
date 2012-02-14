@@ -6,20 +6,35 @@ gamesetup {
   height '100%'
 }
 
-start_button {
+button {
   background_color :red
   border_color :black
   border_width 1
   text_color :black
   font_face :arial
   font_size 22
-  padding 20
-  margin 270
+  padding 10
   width 800
-  height 600
+  height 300
+  left_margin 300
+  right_margin 300
   rounded_corner_radius 20
+}
+
+start_button {
+  extends :button
+  top_margin 250
+  bottom_margin 0
   horizontal_alignment :center
-  vertical_alignment :center
+  vertical_alignment :bottom
+}
+
+load_button {
+  extends :button
+  top_margin 30
+  bottom_margin 220
+  horizontal_alignment :center
+  vertical_alignment :top
 }
 
 selector {
@@ -56,5 +71,6 @@ computer_ai_label {
 computer_ai_selector {
   extends :selector
 }
+
 
 

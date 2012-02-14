@@ -23,6 +23,19 @@ class Game
     play_game
   end
 
+  def game_test
+    options = @view.begin_game
+    @difficulty = options[0]
+    @number_of_players = options[1]
+    p "IN GAME::GAME_TEST -> difficulty = #{@difficulty} , #{@number_of_players}"
+    @view.render_board(@game_board)
+    while
+      coordinates =@view.get_move_coordinates(@current_player)
+      puts message = @move_check.move_validator(self, @game_board, @current_player, coordinates[0], coordinates[1], coordinates[2], coordinates[3])
+      @view.render_board(@game_board)
+    end
+  end
+
   def play_game
     @view.intro
     player_input = @view.one_or_two_player

@@ -55,8 +55,7 @@ class Gui
     board_display.each { |line| print line}
   end
 
-  def display_game_ending_message(board)
-    winner = @board.checkers_left(board, :black) == 0 ? :red : :black
+  def display_game_ending_message(winner)
     winner = winner.to_s.capitalize
     return "\n\nCongratulations, #{winner}, You have won!!!"
   end

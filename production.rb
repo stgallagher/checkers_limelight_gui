@@ -22,7 +22,7 @@ module Production
   def start_game
     @view = theater["default"].current_scene
     @game = Game.new(@view)
-    #@game.game_test
+    @game.game_setup
   end
 
 #  # Define this method if you want the production name to be different from the default, directory name.

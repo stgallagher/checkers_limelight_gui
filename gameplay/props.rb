@@ -6,7 +6,7 @@
 LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
 
 
-  board_panel  do
+  board_panel :id => 'board_panel'  do
     upper_left_corner :styles => "corner_offset"
 
     ('A'..'H').each do |text|
@@ -44,9 +44,16 @@ LETTERS = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
     lower_right_corner :styles => "corner_offset"
   end
 
-  game_info_panel :styles => "game_info_panel", :id => 'game_info_panel'
+  game_info_panel :styles => "game_info_panel", :id => 'game_info_panel' do
+    move_history_label :text => 'Move History'
+  end
 
-  lower_panel do
-    move_status_label :text => "Move Status:"
-    move_status :id => "move_status"
+  lower_panel :id => 'lower_panel' do
+    move_status_label :text => "Move Status:", :id => 'move_status_label'
+    move_status :id => 'move_status', :text => 'Ready to begin game'
+    display_current_player_label :text => 'Player'
+    display_spacer :id => 'display_spacer' do
+      save_button :id => 'save_button', :players => 'button', :text => 'Save Game'
+    end
+    display_current_player :id => 'display_current_player', :text => "Red", :styles => 'display_current_player_black'
   end
